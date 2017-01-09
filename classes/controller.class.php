@@ -8,5 +8,8 @@
  */
 class Controller
 {
-
+    public function __contrsuct ($model)
+    {
+        $this -> model = $model;
+    }
 }
