@@ -8,8 +8,25 @@
  */
 class Controller
 {
-    public function __contrsuct ($model)
+    private $model;
+
+    public function __construct ($model)
     {
         $this -> model = $model;
+    }
+
+    public function about()
+    {
+        $this -> model -> about();
+    }
+
+    public function contact()
+    {
+        $this -> model -> contact ();
+    }
+
+    public function notFound()
+    {
+        $this -> model -> notFound();
     }
 }

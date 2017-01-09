@@ -19,7 +19,7 @@ class View
 
     public function output ()
     {
-        return "<p>".$this -> model -> string."</p>";
+        return $this -> model -> string;
     }
 
 }
